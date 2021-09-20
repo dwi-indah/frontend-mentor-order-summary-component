@@ -127,7 +127,7 @@ p {
         gap: 1.2rem;
         padding: 2rem 1rem;
         @include min-responsive($screen-desktop) {
-            padding: 2rem 3rem;
+            padding: 2rem 2.5rem;
         }
     }
     &__desc {
@@ -154,8 +154,13 @@ p {
 }
 
 .plan {
+    &__detail {
+        display: flex;
+        gap: 1.2rem;
+    }
     &__link {
-        cursor: pointer;
+        cursor: pointer;	    
+        color: $clr-blue;
         &:hover {
             color: $clr-hover-blue;
             text-decoration: none;
